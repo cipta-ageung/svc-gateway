@@ -1,0 +1,11 @@
+version: '2'
+services:
+  svcgateway-postgresql:
+    image: postgres:11.6
+    # volumes:
+    #     - ~/volumes/jhipster/svcGateway/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=svcGateway
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
